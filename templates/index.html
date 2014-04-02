@@ -1,5 +1,11 @@
 {% if g.user %}
-Logged In
+<h3>Notes</h3>
+<ul>
+{% for note in notes %}
+    <li><a href="/note/{{note._id}}">{{note.title}}</a></li>
+{% endfor %}
+</ul>
+<a href="/note/">Add New Note</a>
 {% else %}
-<a href="/login"><img src="/static/sign-in-with-twitter-gray.png"></a>
+<a href="/login"><img alt="login" src="/static/sign-in-with-twitter-gray.png"></a>
 {% endif %}
