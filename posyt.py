@@ -184,4 +184,5 @@ class NoteForm(Form):
     tags = TagListField('tags')
 
 if __name__ == '__main__':
+    mongo.db.ensureIndex()
     app.run()
