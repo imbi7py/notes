@@ -1,6 +1,6 @@
 from functools import wraps
 from datetime import datetime
-# another test for this stupid repo hook thing
+# this is a random commit to test the hook
 from flask import (
     Flask,
     request,
